@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    overflow: hidden;
+}
+
+/* Desktop */
+#desktop {
+    height: calc(100vh - 40px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#backBtn {
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: white;
+}
+
+.icon {
+    width: 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+}
+
+.icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.window {
+    width: 500px;
+    height: 300px;
+    background: #1e1e1e;
+    color: white;
+    position: absolute;
+    top: 80px;
+    left: 120px;
+    border-radius: 6px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.window-header {
+    height: 35px;
+    background: #2d2d2d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    cursor: move;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.window-body {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
+}
+
+#path {
+    font-size: 12px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+#fileArea {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.file,
+.folder {
+    width: 80px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.file::before {
+    content: "📄";
+    font-size: 32px;
+}
+
+.folder::before {
+    content: "📁";
+    font-size: 32px;
+}
+
+/* Taskbar */
+#taskbar {
+    height: 40px;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    color: white;
+}
+
+.start-btn {
+    font-weight: bold;
+}
+
+#contextMenu {
+    position: absolute;
+    background: #2b2b2b;
+    border: 1px solid #444;
+    color: white;
+    width: 140px;
+    font-size: 14px;
+    z-index: 9999;
+}
+
+#contextMenu div {
+    padding: 8px;
+    cursor: pointer;
+}
+
+#contextMenu div:hover {
+    background: #444;
+}
+
+
+.clock {
+    font-size: 14px;
+}

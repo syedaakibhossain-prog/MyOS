@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MyOS</title>
+    <link rel="stylesheet" href="css/desktop.css">
+</head>
+
+<body>
+
+    <!-- Desktop -->
+    <div id="desktop">
+        <div class="icon">
+            <img src="assets/icons/open-folder.png" alt="">
+            <span>File manager</span>
+        </div>
+
+        <div class="icon">
+            <img src="assets/icons/about.png" alt="">
+            <span>About</span>
+        </div>
+    </div>
+    <!-- File Manager Window -->
+    <div class="window hidden" id="fileManagerWindow">
+        <div class="window-header">
+            <button id="backBtn">⬅</button>
+            <span>File Manager</span>
+            <button class="close-btn">✕</button>
+        </div>
+        <div class="window-body">
+            <div id="path">Desktop</div>
+            <div id="fileArea"></div>
+        </div>
+
+    </div>
+
+
+    <!-- Taskbar -->
+    <div id="taskbar">
+        <div class="start-btn">MyOS</div>
+        <div class="clock" id="clock">00:00</div>
+    </div>
+    <div id="contextMenu" class="hidden">
+        <div id="newFolder">New Folder</div>
+        <div id="newFile">New File</div>
+        <div id="deleteItem">Delete</div>
+    </div>
+
+    <!-- Data -->
+    <script src="js/data.js"></script>
+    <script src="js/storage.js"></script>
+    <!-- File Manager -->
+    <script src="js/fileManager.js"></script>
+    <!-- Context Menu -->
+    <script src="js/contextMenu.js"></script>
+    <!-- App -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
