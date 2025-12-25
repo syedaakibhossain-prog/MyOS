@@ -31,22 +31,6 @@ _No frameworks. No libraries._
 
 ---
 
-## 📁 Project Structure
-MyOS/
-├── index.html
-├── css/
-│ └── desktop.css
-├── js/
-│ ├── data.js
-│ ├── storage.js
-│ ├── fileManager.js
-│ ├── contextMenu.js
-│ └── app.js
-└── assets/
-    └── icons/
----
-
----
 
 ## 🔮 Planned Features (Coming Soon)
 
